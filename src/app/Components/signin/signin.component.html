@@ -1,0 +1,41 @@
+<section class="signin w-50 mx-auto main-color py-5">
+    <h1 class="text-center font-xxl font-bold"><i class="fa-regular fa-user"></i> Login</h1>
+
+    <form [formGroup]="loginForm" (ngSubmit)="handleLogin(loginForm)" class="example-form d-flex flex-column align-items-center my-4">
+
+        <mat-form-field class="example-full-width w-75">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" type="email" matInput placeholder="Ex. pat@example.com">
+        </mat-form-field>
+
+        <mat-form-field class="w-75">
+            <mat-label>Enter your password</mat-label>
+            <input formControlName="password" matInput [type]="hide ? 'password' : 'text'" />
+            <button class="hide-icon"
+            type="button"
+              mat-icon-button
+              matSuffix
+              (click)="clickEvent($event)"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide"
+            >
+              <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>
+
+
+        <button class="btn-login mt-2 w-75" type="submit">
+            <span>Log In</span>
+        </button>
+
+        <div class="forget-pass d-flex justify-content-center mt-3">
+            <span [routerLink]="['/forgetPass']" class="cursor-pointer">Forgot Your Password ?</span>
+        </div>
+
+        <button [routerLink]="['/signup']" type="button" class="btn-signup mt-2 w-25">Create New Account</button>
+
+        
+    </form>
+</section>
+
+

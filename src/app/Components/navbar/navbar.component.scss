@@ -1,0 +1,48 @@
+.nav-active{
+    color: var(--main-color) !important;
+    font-weight: 900;
+}
+.link{
+    color: rgb(107 114 128);
+    transition: all 0.3s;
+}
+.link:hover{
+    color: var(--main-color);
+}
+
+
+// Social media
+.social-media i{
+    transition: all 0.4s;
+}
+
+.social-media i:hover{
+    transform: translateY(-5px);
+}
+
+.facebook {
+    color: rgb(8 102 255);
+}
+
+.insta {
+    color: rgb(255 17 91);
+}
+
+.twitter {
+    color: var(--second-color);
+}
+
+.linked-in {
+    color: rgb(10 102 194);
+}
+
+
+
+
+.heart,
+.cart {
+    color: var(--second-color);
+}
+.badge{
+    background-color: var(--main-color) !important;
+}

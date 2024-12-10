@@ -1,0 +1,32 @@
+.hide-icon{
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(193, 196, 205,0);
+    transition: all 0.3s;
+}
+.hide-icon:hover{
+    background-color: rgba(193, 196, 205,0.5);
+}
+
+.btn-register{
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 16px;
+    transition: all 0.3s;
+}
+
+.btn-register:hover{
+    background-color: rgb(2, 173, 227);
+}
+
+.account span{
+    border-bottom: 1px solid var(--main-color-opacity);
+    transition: all 0.15s;
+}
+.account span:hover{
+    border-bottom: 1px solid var(--main-color);
+}
