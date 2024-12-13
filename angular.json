@@ -7,7 +7,18 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
+<<<<<<< HEAD
           "style": "scss"
+=======
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
         }
       },
       "root": "",
@@ -15,11 +26,19 @@
       "prefix": "app",
       "architect": {
         "build": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/fresh-cart",
             "index": "src/index.html",
             "main": "src/main.ts",
+=======
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/fresh-cart",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
             "polyfills": [
               "zone.js"
             ],
@@ -36,7 +55,16 @@
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+<<<<<<< HEAD
             ]
+=======
+            ],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
           },
           "configurations": {
             "production": {
@@ -55,12 +83,18 @@
               "outputHashing": "all"
             },
             "development": {
+<<<<<<< HEAD
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+=======
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
             }
           },
           "defaultConfiguration": "production"
@@ -69,10 +103,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "FreshCart:build:production"
             },
             "development": {
               "browserTarget": "FreshCart:build:development"
+=======
+              "buildTarget": "FreshCart:build:production"
+            },
+            "development": {
+              "buildTarget": "FreshCart:build:development"
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +121,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "FreshCart:build"
+=======
+            "buildTarget": "FreshCart:build"
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
           }
         },
         "test": {
@@ -106,6 +151,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "9829e3b9-f1f6-4c62-b638-cb955f275243"
+=======
+    "analytics": "73f449e3-4f4f-43e2-b923-503b0d0991d7"
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
   }
 }

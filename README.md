@@ -1,6 +1,10 @@
 # FreshCart
 
+<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+=======
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
 
 ## Development server
 

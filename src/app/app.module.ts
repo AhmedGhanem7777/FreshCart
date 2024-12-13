@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+<<<<<<< HEAD
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -35,10 +36,23 @@ import { HttpClientModule } from '@angular/common/http';
     CategoriesComponent,
     BrandsComponent,
     OrdersComponent
+=======
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
+import { FormsModule } from '@angular/forms';
+
+@NgModule({
+  declarations: [
+    AppComponent
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< HEAD
     BrowserAnimationsModule,
     MatInputModule,
     MatFormFieldModule,
@@ -47,6 +61,14 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [],
+=======
+    SharedModule,
+    FormsModule
+  ],
+  providers: [
+    provideClientHydration()
+  ],
+>>>>>>> aa8958825740aca69001405535fd348ee176c20e
   bootstrap: [AppComponent]
 })
 export class AppModule { }
