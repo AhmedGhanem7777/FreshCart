@@ -1,0 +1,31 @@
+{
+  "routes": [
+    "/auth",
+    "/auth/forgot-pass",
+    "/auth/login",
+    "/auth/new-pass",
+    "/auth/register",
+    "/auth/verify-email",
+    "/public",
+    "/public/allorders",
+    "/public/allorders/orders",
+    "/public/brands",
+    "/public/brands/brands",
+    "/public/cart",
+    "/public/cart/cart",
+    "/public/cart/checkout",
+    "/public/categories",
+    "/public/categories/categories",
+    "/public/home",
+    "/public/home/home",
+    "/public/products",
+    "/public/products/products",
+    "/public/profile",
+    "/public/profile/profile-setting",
+    "/public/profile/profile-setting/add-address",
+    "/public/profile/profile-setting/change-pass",
+    "/public/profile/profile-setting/personal-details",
+    "/public/wishlist",
+    "/public/wishlist/wishlist"
+  ]
+}

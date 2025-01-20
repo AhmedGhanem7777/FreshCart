@@ -1,0 +1,1 @@
+import{A as c,Wa as r,x as i}from"./chunk-QPUKSS23.js";var s=(()=>{class t{constructor(o){this._Location=o}goBack(){this._Location.back()}static{this.\u0275fac=function(a){return new(a||t)(c(r))}}static{this.\u0275prov=i({token:t,factory:t.\u0275fac,providedIn:"root"})}}return t})();export{s as a};
